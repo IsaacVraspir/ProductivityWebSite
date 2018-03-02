@@ -4,9 +4,103 @@
 		<link rel="stylesheet" href="style.css"/>
 		<meta charset="utf-8"\>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<script src="javascript.js"> </script>
 		<title>ProductivityWebSite</title>
 	</head>
 	<body>
+		<div id="topPage">
+			<ul id="buttons">
+				<li><a href="productivityWebSite.html">To Do List</a></li>
+				<li><a href="pictureSlideshow.html">Picture Slideshow</a></li>
+			</ul>
+		</div>
 	
+		<div id="divOne" class="header">
+			<h2>To Do List</h2>
+			<input type="text" id="inputOne" placeholder="To Do Item...">
+			<input type="date" id="inputDate">
+			<input type="color" id="inputColor">
+			<select id="CategoryPick" name="Categories">
+				<option value="myUL">myUL</option>
+				<option value="home">Home</option>
+				<option value="work">Work</option>
+				<option value="school">School</option>
+				<option value="family">Family</option>
+			</select>
+			<button onclick="newElement()"> submit</button>
+		</div>
+			
+		<div id="cal"> 
+			<div class="header"> 
+				<span class="left button" id="prev"> &lang; </span> 
+				<span class="month-year" id="label"> May 2018 </span> 
+				<span class="right button" id="next"> &rang; </span>
+			</div> 
+			<table id="days"> 
+				<td>sun</td> 
+				<td>mon</td> 
+				<td>tue</td> 
+				<td>wed</td>
+				<td>thu</td> 
+				<td>fri</td> 
+				<td>sat</td>
+			</table> 
+			<div id="cal-frame"> 
+				<table class="curr"> 
+					<tbody> 
+						<tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr> 
+						<tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="today">11</td><td>12</td></tr> 
+						<tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr> 
+						<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr> 
+						<tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="nil"></td><td class="nil"></td></tr> 
+					</tbody> 
+				</table>
+			</div> 
+		</div>
+		
+		<div id="todo">
+			<h3> Uncompleted Tasks <button onclick="removeAll()">Delete All Tasks In Current Category</button></h3>
+			Categories: 
+			<select id="Categories" onchange="catFun()" name="Categories">
+				<option value="myUL">myUL</option>
+				<option value="home">Home</option>
+				<option value="work">Work</option>
+				<option value="school">School</option>
+				<option value="family">Family</option>
+			</select>
+			
+			<select id="Sorter" onchange="sortFun()">
+				<option value="added">Sort By Date Added</option>
+				<option value="deadline">Sort By Date Deadline</option>
+			</select>
+			
+			<ol id="home" class="inv">
+			</ol>
+			
+			<ol id="work" class="inv">
+			</ol>
+			
+			<ol id="school" class="inv">
+			</ol>
+			
+			<ol id="family" class="inv">
+			</ol>
+			
+			<ol id="myUL" class="vis">
+				<li>Hit the gym - (Example)</li>
+				<li>Pay bills - (Example)</li>
+				<li>Meet George - (Example)</li>
+				<li>Buy eggs - (Example)</li>
+				<li>Read a book - (Example)</li>
+				<li>Organize office - (Example)</li>
+			</ol>
+		</div>
+		
+		<div id="doneTasks">
+			<h3> Completed Tasks </h3>
+			<ol id="doneList">
+			</ol>
+		</div>
+		
 	</body>
 </html>

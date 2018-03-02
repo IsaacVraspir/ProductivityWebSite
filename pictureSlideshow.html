@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="stylePics.css"/>
+		<meta charset="utf-8"\>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<script src="javascriptPicture.js"></script>
+		<title>ProductivityWebSite</title>
+	</head>
+	<body>
+		<div id="topPage">
+			<ul id="buttons">
+				<li><a href="productivityWebSite.html">To Do List</a></li>
+				<li><a href="pictureSlideshow.html">Picture Slideshow</a></li>
+			</ul>
+		</div>
+		
+		<table>
+			<tr>
+				<th><img id="1" src="pics/pic1.jpg" onclick="initLightBox(1)" height="200" width="auto"></th>
+				<th><img id="2" src="pics/pic2.jpg" onclick="initLightBox(2)" height="200" width="auto"></th>
+				<th><img id="3" src="pics/pic3.jpg" onclick="initLightBox(3)" height="200" width="auto"></th>
+				<th><img id="4" src="pics/pic4.jpg" onclick="initLightBox(4)" height="200" width="auto"></th>
+			</tr>
+			<tr>
+				<th><img id="5" src="pics/pic5.jpg" onclick="initLightBox(5)" height="200" width="auto"></th>
+				<th><img id="6" src="pics/pic6.jpg" onclick="initLightBox(6)" height="200" width="auto"></th>
+				<th><img id="7" src="pics/pic7.jpg" onclick="initLightBox(7)" height="200" width="auto"></th>
+				<th><img id="8" src="pics/pic8.jpg" onclick="initLightBox(8)" height="200" width="auto"></th>
+			</tr>
+			<tr>
+				<th><img id="9" src="pics/pic9.jpg" onclick="initLightBox(9)" height="200" width="auto"></th>
+				<th><img id="10" src="pics/pic10.jpg" onclick="initLightBox(10)" height="200" width="auto"></th>
+				<th><img id="11" src="pics/pic11.jpg" onclick="initLightBox(11)" height="200" width="auto"></th>
+				<th><img id="12" src="pics/pic12.jpg" onclick="initLightBox(12)" height="200" width="auto"></th>
+			</tr>
+			<tr>
+				<th><img id="13" src="pics/pic13.jpg" onclick="initLightBox(13)" height="200" width="auto"></th>
+				<th><img id="14" src="pics/pic14.jpg" onclick="initLightBox(14)" height="200" width="auto"></th>
+				<th><img id="15" src="pics/pic15.jpg" onclick="initLightBox(15)" height="200" width="auto"></th>
+				<th><img id="16" src="pics/pic16.jpg" onclick="initLightBox(16)" height="200" width="auto"></th>
+			</tr>
+			<tr>
+				<th><img id="17" src="pics/pic17.jpg" onclick="initLightBox(17)" height="200" width="auto"></th>
+				<th><img id="18" src="pics/pic18.jpg" onclick="initLightBox(18)" height="200" width="auto"></th>
+				<th><img id="19" src="pics/pic19.jpg" onclick="initLightBox(19)" height="200" width="auto"></th>
+				<th><img id="20" src="pics/pic20.jpg" onclick="initLightBox(20)" height="200" width="auto"></th>
+			</tr>
+		</table>
+	
+		<div id="lightBoxBackground" onclick="exitPic()">
+		</div>
+		
+		<div id="lightBox">
+			<img id="lightPic" src="pics/pic1.jpg">
+		</div>
+	
+	</body>
+</html>

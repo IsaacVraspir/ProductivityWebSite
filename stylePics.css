@@ -1,0 +1,63 @@
+html {
+	font-size: 80%;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: rgb(190, 190, 190);
+}
+
+#topPage ul {
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+#buttons li {
+	display: inline;
+	float: left;
+	list-style: none;
+	text-align: center;
+	background-color: #000000;
+	margin-right: 30px;
+	width: 130px;
+	line-height: 20px;
+}
+
+#buttons li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+
+#buttons li a:hover {
+  text-decoration: none;
+  color: #000000;
+  background-color: #33B5E5;
+}
+
+
+#lightBoxBackground {
+	position: fixed;	
+	left: 0px;
+	top: 0px;
+	opacity: 0.90;
+	display: none;
+	background-color: #000000;
+	height: 100%;
+	width: 100%;
+	
+}
+
+#lightBox {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	background-color: #fefefe;
+	display: none;
+}
+
+#lightBox img {
+	max-width: 1200px;
+}
+
